@@ -1,10 +1,12 @@
 name: NaMSG
 version: '1.0-SNAPSHOT'
-main: dev.alesixdev.naMSG.NaMSG
+main: dev.alesixdev.CatMSG.CatMSG
 api-version: '1.20'
 authors: [ AlesixDev ]
 
 commands:
     namsg:
         description: Send a message to a player
-        aliases: [msg, message]
+    msg:
+        description: Send a message to a player
+        aliases: [message]

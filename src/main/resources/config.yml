@@ -1,4 +1,18 @@
-msg-usage: "&aTest usage menssage"
-msg-no-permission: "&cText no permission"
-msg-player-not-found: "&cText player not found"
-msg-no-message: "&cText no message"
+# Thanks for downloading the plugin! If you have any questions or need help
+# feel free to contact me on Discord: SystemRescue
+
+# The prefix for the plugin
+
+Prefix: "&8[&d&lCatMSG&8] &r"
+
+# The messages that will be sent to the player
+Message:
+  PlayerNotFound: "&cPlayer not found!"
+  NoPermission: "&cYou don't have permission to do that!"
+  NoArgs: "&cPlease provide a message!"
+  Reload: "&aPlugin reloaded!"
+
+# The message that will be sent to the player
+Msg:
+  Sender: "&d&l{player} -> {target} &8» &7{message}"
+  Target: "&d&l{target} -> {player} &8» &7{message}"

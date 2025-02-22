@@ -1,6 +1,6 @@
-package dev.alesixdev.naMSG.manager;
+package dev.alesixdev.CatMSG.manager;
 
-import dev.alesixdev.naMSG.NaMSG;
+import dev.alesixdev.CatMSG.CatMSG;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -10,13 +10,13 @@ import java.io.IOException;
 
 public class Config {
 
-    private final NaMSG plugin;
+    private final CatMSG plugin;
     private final String fileName;
     private FileConfiguration fileConfiguration = null;
     private File file = null;
     private final String folderName;
 
-    public Config(String fileName, String folderName, NaMSG plugin) {
+    public Config(String fileName, String folderName, CatMSG plugin) {
         this.fileName = fileName;
         this.folderName = folderName;
         this.plugin = plugin;

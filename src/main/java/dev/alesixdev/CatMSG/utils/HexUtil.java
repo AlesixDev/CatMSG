@@ -1,6 +1,6 @@
-package dev.alesixdev.naMSG.utils;
+package dev.alesixdev.CatMSG.utils;
 
-import dev.alesixdev.naMSG.NaMSG;
+import dev.alesixdev.CatMSG.CatMSG;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class HexUtil {
 
-    public static void config(NaMSG plugin, CommandSender sender, String path) {
+    public static void config(CatMSG plugin, CommandSender sender, String path) {
         String message = plugin.getConfig().getString("messages." + path); //Thanks hhit <3
         sender.sendMessage(TranslateColor(TranslateHexColor(message)));
     }
