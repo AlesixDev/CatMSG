@@ -22,3 +22,6 @@ public class ConfigManager {
         loadConfig();
     }
 }
+
+// I know, my code is crap, but well, it is what it is :D
+// Special thanks to: hhit, Nay and Redactado

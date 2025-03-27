@@ -14,14 +14,15 @@ public final class CatMSG extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Bukkit.getConsoleSender().sendMessage("§a[CatMSG] §fPlugin enabled!");
+
         managers();
-        init();
         command();
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        Bukkit.getConsoleSender().sendMessage("§a[CatMSG] §fPlugin disabled!");
     }
 
     private void managers() {
@@ -29,15 +30,10 @@ public final class CatMSG extends JavaPlugin {
         ConfigManager.loadConfig();
     }
 
-    private void init() {
-        Bukkit.getConsoleSender().sendMessage("§a[naMSG] §fPlugin enabled!");
-    }
-
     private void command() {
-        getCommand("msg").setExecutor(new MsgCommand(this, ConfigManager));
-        getCommand("namsg").setExecutor(new MainCommand(this));
-
+        getCommand("msg").setExecutor(new MsgCommand(this));
+        getCommand("catmsg").setExecutor(new MainCommand(this));
         getCommand("msg").setTabCompleter(new MsgTab(this));
-        getCommand("namsg").setTabCompleter(new MainTab(this));
+        getCommand("catmsg").setTabCompleter(new MainTab(this));
     }
 }

@@ -1,18 +1,18 @@
-# Thanks for downloading the plugin! If you have any questions or need help
-# feel free to contact me on Discord: SystemRescue
-
-# The prefix for the plugin
-
-Prefix: "&8[&d&lCatMSG&8] &r"
+# CatMSG is a simple plugin that allows players to send messages to each other.
 
 # The messages that will be sent to the player
-Message:
-  PlayerNotFound: "&cPlayer not found!"
-  NoPermission: "&cYou don't have permission to do that!"
-  NoArgs: "&cPlease provide a message!"
-  Reload: "&aPlugin reloaded!"
+message:
+  playernotfound: "&cPlayer not found!"
+  senderistarget: "&cYou can't send a message to yourself!"
+  usage: "&cUsage: /msg <player> <message>"
+  nopermission: "&cYou don't have permission to do that!"
+  nomessage: "&cYou must enter a message!"
+  reload: "&aPlugin reloaded!"
 
-# The message that will be sent to the player
-Msg:
-  Sender: "&d&l{player} -> {target} &8» &7{message}"
-  Target: "&d&l{target} -> {player} &8» &7{message}"
+# {player} is the player who sent the message
+# {target} is the player who received the message
+# {message} is the message that was sent
+
+msg:
+  sender: "&dYou &7-> &d{target} &8» &7{message}"
+  target: "&d{player} &7-> &dYou &8» &7{message}"

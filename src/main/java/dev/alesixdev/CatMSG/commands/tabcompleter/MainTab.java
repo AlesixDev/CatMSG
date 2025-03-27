@@ -17,7 +17,7 @@ public class MainTab implements TabCompleter {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        if (command.getName().equalsIgnoreCase("namsg")) {
+        if (command.getName().equalsIgnoreCase("catmsg")) {
             if (args.length == 1) {
                 return Arrays.asList("reload");
             }

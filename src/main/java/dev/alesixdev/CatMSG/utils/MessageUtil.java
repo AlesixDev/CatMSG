@@ -3,14 +3,19 @@ package dev.alesixdev.CatMSG.utils;
 import dev.alesixdev.CatMSG.CatMSG;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class HexUtil {
+public class MessageUtil {
+
+    private final CatMSG plugin;
+
+    public MessageUtil(CatMSG plugin) {
+        this.plugin = plugin;
+    }
 
     public static void config(CatMSG plugin, CommandSender sender, String path) {
-        String message = plugin.getConfig().getString("messages." + path); //Thanks hhit <3
+        String message = plugin.getConfig().getString("message." + path); //Thanks hhit <3
         sender.sendMessage(TranslateColor(TranslateHexColor(message)));
     }
 
